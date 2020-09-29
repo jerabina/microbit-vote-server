@@ -77,6 +77,11 @@ basic.forever(() => {
     basic.pause(500)
 })
 
+/* reset all */
+input.onGesture(Gesture.Shake, function () {
+    control.reset()
+})
+
 // setup the radio and start!
 radio.setGroup(42)
 game.addScore(1)
